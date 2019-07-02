@@ -1,6 +1,6 @@
 name: ldnddev Section Paragraph Bundle
 type: module
-description: A reusable Hero Paragraph bundle.
+description: A reusable Section Paragraph bundle.
 core: 8.x
 package: Paragraphs
 dependencies:
