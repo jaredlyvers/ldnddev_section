@@ -1,0 +1,65 @@
+uuid: 18aba124-931d-4cbe-a7f1-78a3f4bbfad0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: iP9gPN4poDAPQ_2g0fq1B7_NpCgLRGRENRyotWyAnbI
+id: paragraph.field_ldnddev_section_grid
+field_name: field_ldnddev_section_grid
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '-one -c12'
+      label: 'A Full Single Column - [____________]'
+    -
+      value: '-two -c3x9'
+      label: 'A 3 x 9 Column Split - [___][_________]'
+    -
+      value: '-two -c4x8'
+      label: 'A 4 x 8 Column Split - [____][________]'
+    -
+      value: '-two -c5x7'
+      label: 'A 5 x 7 Column Split - [_____][_______]'
+    -
+      value: '-two -c6x6'
+      label: 'A 6 x 6 Column Split - [______][______]'
+    -
+      value: '-two -c7x5'
+      label: 'A 7 x 5 Column Split - [_______][_____]'
+    -
+      value: '-two -c8x4'
+      label: 'A 8 x 4 Column Split - [________][____]'
+    -
+      value: '-two -c9x3'
+      label: 'A 9 x 3 Column Split - [_________][___]'
+    -
+      value: '-three -c2x8x2'
+      label: 'A 2 x 8 x 2 Column Split - [__][________][__]'
+    -
+      value: '-three -c3x6x3'
+      label: 'A 3 x 6 x 3 Column Split - [___][______][___]'
+    -
+      value: '-three -c3x3x6'
+      label: 'A 3 x 3 x 6 Column Split - [___][___][______]'
+    -
+      value: '-three -c4x4x4'
+      label: 'A 4 x 4 x 4 Column Split - [____][____][____]'
+    -
+      value: '-three -c6x3x3'
+      label: 'A 6 x 3 x 3 Column Split - [______][___][___]'
+    -
+      value: '-four -c3x3x3x3'
+      label: 'A 4 x 4 x 4 x 4 Column Split - [___][___][___][___]'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,46 @@
+{{ attach_library('ldnddev_section/ldnddev_section') }}
+{% 
+    set classes=[
+        'ldnddev-section'
+    ]
+%}
+
+{% if content.field_ldnddev_section_css.0 %}
+    {% set classes = classes|merge([content.field_ldnddev_section_css.0|render|clean_class]) %}
+{% endif %}
+
+{% if content.field_ldnddev_section_edge|render|trim == 'On' %}
+    {% set classes = classes|merge(['-full']) %}
+    {% else %}
+        {% set classes = classes|merge(['-contained']) %}
+{% endif %}
+
+{% if content.field_ldnddev_section_cnt_eg|render|trim == 'On' %}
+    {% set content_edge = '-full' %}
+    {% else %}
+        {% set content_edge = '-contained' %}
+{% endif %}
+
+{% if content.field_ldnddev_section_grid.0 %}
+    {% set grid = content.field_ldnddev_section_grid.0|render %}
+{% endif %}
+
+{% if content.field_ldnddev_section_image.0 %}
+    {% set img_url = file_url(content.field_ldnddev_section_image['#items'].entity.uri.value) %}
+{% endif %}
+
+{% if content.field_ldnddev_section_overlay.0 %}
+    {% set classes = classes|merge([content.field_ldnddev_section_overlay.0|render]) %}
+{% endif %}
+
+<div {{ attributes.addClass(classes) }} style="background-image: url({{ img_url }});">
+    <div class="ldnddev-section__content {{ content_edge }}">
+        <h2 class="ldnddev-section__title">{{ content.field_ldnddev_section_title|render }}</h2>
+        <div class="ldnddev-section__items {{ grid }}">
+            {{ content.field_ldnddev_section_item }}
+        </div>
+    </div>
+    {% if content.field_ldnddev_section_overlay.0  %}
+        <div class="ldnddev-section__overlay"></div>
+    {% endif %}
+</div>

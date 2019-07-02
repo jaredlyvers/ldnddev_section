@@ -1,0 +1,23 @@
+uuid: 11a8dd08-6fac-4f79-8ac4-91adcbe2e636
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: RpwJMC2CD7wOjghbmIOnDi41jIxZlipjlDF8ijiE9Jg
+id: paragraph.field_ldnddev_section_title
+field_name: field_ldnddev_section_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

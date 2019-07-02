@@ -1,0 +1,25 @@
+uuid: d66d1952-e6ce-47cf-a32f-b9a1e14f9d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_section_grid
+    - paragraphs.paragraphs_type.ldnddev_section
+  module:
+    - options
+_core:
+  default_config_hash: Vnq49R6_JJInMysotyvd4ZovxdahpemHdhQQ6iCUjuc
+id: paragraph.ldnddev_section.field_ldnddev_section_grid
+field_name: field_ldnddev_section_grid
+entity_type: paragraph
+bundle: ldnddev_section
+label: 'Section Grid Layout'
+description: 'The grid options allow you to choose how many items will be in each section.'
+required: true
+translatable: false
+default_value:
+  -
+    value: '-one -c12'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

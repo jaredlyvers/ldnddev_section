@@ -1,0 +1,97 @@
+uuid: 9867e679-af08-4e08-9e16-66e56657a5dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_cnt_eg
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_css
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_edge
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_grid
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_image
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_item
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_overlay
+    - field.field.paragraph.ldnddev_section.field_ldnddev_section_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ldnddev_section
+  module:
+    - image
+    - paragraphs
+_core:
+  default_config_hash: HeVS9TDOgwcP18D56IM-3cLfFTvMdWtYtPxBz-24NY4
+id: paragraph.ldnddev_section.default
+targetEntityType: paragraph
+bundle: ldnddev_section
+mode: default
+content:
+  field_ldnddev_section_cnt_eg:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ldnddev_section_css:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ldnddev_section_edge:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ldnddev_section_grid:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ldnddev_section_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ldnddev_section_item:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_ldnddev_section_overlay:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ldnddev_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

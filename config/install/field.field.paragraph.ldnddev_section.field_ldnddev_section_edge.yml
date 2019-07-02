@@ -1,0 +1,25 @@
+uuid: 99acca20-d71b-42d0-9472-62607143df34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_section_edge
+    - paragraphs.paragraphs_type.ldnddev_section
+_core:
+  default_config_hash: kSyvDITNqe4pVtqoK6Cq4IUNIfVl3oNvz5NBB3inCKk
+id: paragraph.ldnddev_section.field_ldnddev_section_edge
+field_name: field_ldnddev_section_edge
+entity_type: paragraph
+bundle: ldnddev_section
+label: 'Section Edge to Edge'
+description: 'Selecting this option will allow the <em>section</em> to go edge-to-edge of the browser screen.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

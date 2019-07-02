@@ -1,0 +1,21 @@
+uuid: 88854852-4175-434a-816d-ba5816067f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_section_css
+    - paragraphs.paragraphs_type.ldnddev_section
+_core:
+  default_config_hash: uTfbdXkqN10Q9hyEUm62VSBv0-YwFhuZVGna7TQMkbI
+id: paragraph.ldnddev_section.field_ldnddev_section_css
+field_name: field_ldnddev_section_css
+entity_type: paragraph
+bundle: ldnddev_section
+label: 'Custom CSS Class'
+description: 'Add your own custom CSS class.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

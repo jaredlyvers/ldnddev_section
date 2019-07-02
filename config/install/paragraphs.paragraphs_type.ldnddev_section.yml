@@ -1,0 +1,11 @@
+uuid: 2d53bf25-96f7-4cc6-98bc-c460d2dbd5f4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cKt2Niww2IVGb8DyOaYIyBZJZJJEgkw4DfYxRTjm7XI
+id: ldnddev_section
+label: 'ldnddev Section'
+icon_uuid: null
+description: 'This bundle is used to combine several standard bundles together into a section wrapper. This bundle allows you to add multiple sections to a page, each with their own layout of components.'
+behavior_plugins: {  }
