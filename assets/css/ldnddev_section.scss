@@ -229,25 +229,99 @@ $key: (
                 }
             }
             #{$parent}__item{
-                &:nth-child(2n){
-                    margin-right: 0px !important;
-                }
-                &:nth-child(2n+1){
-                    clear: both;
-                    content: '';
-                    display: table;
-                    margin-bottom: 20px;
-                }
                 @include mq(tablet){
+                    &:nth-child(2n){
+                        margin-right: 0px !important;
+                    }
+                    &:nth-child(2n+1){
+                        clear: both;
+                        content: '';
+                        display: table;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
         &.-three{
+            &.-c2x8x2{
+                #{$parent}__item{
+                    @include mq(tablet){
+                        &:nth-child(1n){
+                            @include grid-column(col-2);
+                        }
+                        &:nth-child(2n){
+                            @include grid-column(col-8);
+                        }
+                        &:nth-child(3n){
+                            @include grid-column(col-2);
+                        }
+                    }
+                }
+            }
+            &.-c3x6x3{
+                #{$parent}__item{
+                    @include mq(tablet){
+                        &:nth-child(1n){
+                            @include grid-column(col-2);
+                        }
+                        &:nth-child(2n){
+                            @include grid-column(col-6);
+                        }
+                        &:nth-child(3n){
+                            @include grid-column(col-3);
+                        }
+                    }
+                }
+            }
+            &.-c3x3x6{
+                #{$parent}__item{
+                    @include mq(tablet){
+                        &:nth-child(1n){
+                            @include grid-column(col-3);
+                        }
+                        &:nth-child(2n){
+                            @include grid-column(col-3);
+                        }
+                        &:nth-child(3n){
+                            @include grid-column(col-6);
+                        }
+                    }
+                }
+            }
+            &.-c4x4x4{
+                #{$parent}__item{
+                    @include mq(tablet){
+                        &:nth-child(1n){
+                            @include grid-column(col-4);
+                        }
+                        &:nth-child(2n){
+                            @include grid-column(col-4);
+                        }
+                        &:nth-child(3n){
+                            @include grid-column(col-4);
+                        }
+                    }
+                }
+            }
+            &.-c6x3x3{
+                #{$parent}__item{
+                    @include mq(tablet){
+                        &:nth-child(1n){
+                            @include grid-column(col-6);
+                        }
+                        &:nth-child(2n){
+                            @include grid-column(col-3);
+                        }
+                        &:nth-child(3n){
+                            @include grid-column(col-3);
+                        }
+                    }
+                }
+            }
             #{$parent}__item{
                 @include mq(tablet){
-                    @include grid-column(col-4);
                     &:nth-child(3n){
-                        margin-right: 0px;
+                        margin-right: 0px !important;
                     }
                     &:nth-child(3n+1){
                         clear: both;
