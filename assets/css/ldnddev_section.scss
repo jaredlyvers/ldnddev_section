@@ -12,6 +12,11 @@ $ui-04: #484848;
 $hover-primary: #ff3e3e;
 $hover-secondary: #ad2424;
 $hover-row: #f2f2f2;
+$gutter-mobile: 10px;
+$gutter-tablet: 10px;
+$gutter-desktop: 20px;
+$gutter-hd: 20px;
+$max-width: 1200px;
 
 /**
  * px to rem conversion
@@ -127,21 +132,63 @@ $key: (
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-sizing: border-box;
     position: relative;
     top: 0px;
     left: 0px;
     margin: 0 auto;
+    width: 100%;
     padding: 0;
+    &::after{
+        clear: both;
+        content: '';
+        display: table;
+    }
+    &.-contained{
+        max-width: $max-width;
+    }
+    &.-full{
+        max-width: 100%;
+    }
     &__content{
         position: relative;
         top: 0px;
         left: 0px;
+        margin: 0 auto;
+        width: 100%;
         z-index: 10;
+        &.-contained{
+            padding: 0 $gutter-mobile;
+            max-width: $max-width;
+            @include mq(tablet){
+                padding: 0 $gutter-tablet;
+            }
+            @include mq(desktop){
+                padding: 0 $gutter-desktop;
+            }
+            @include mq(hd){
+                padding: 0 $gutter-hd;
+            }            
+        }
+        &.-full{
+            padding: 0 $gutter-mobile;
+            max-width: 100%;
+            @include mq(tablet){
+                padding: 0 $gutter-tablet;
+            }
+            @include mq(desktop){
+                padding: 0 $gutter-desktop;
+            }
+            @include mq(hd){
+                padding: 0 $gutter-hd;
+            }
+        }
     }
     &__items{
         @include grid-container;
         &.-one{
             @include grid-column(col-12);
+            margin-right: 0px;
         }
         &.-two{            
             &.-c3x9{
