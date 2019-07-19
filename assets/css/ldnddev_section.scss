@@ -13,10 +13,13 @@ $hover-primary: #ff3e3e;
 $hover-secondary: #ad2424;
 $hover-row: #f2f2f2;
 $gutter-mobile: 10px;
-$gutter-tablet: 10px;
-$gutter-desktop: 20px;
-$gutter-hd: 20px;
-$max-width: 1200px;
+$gutter-tablet: 22px;
+$gutter-desktop: 22px;
+$gutter-hd: 30px;
+$width-tablet: 724px;
+$width-desktop: 980px;
+$width-hd: 1200px;
+$max-width: $width-hd;
 
 /**
  * px to rem conversion
@@ -137,8 +140,8 @@ $key: (
     top: 0px;
     left: 0px;
     margin: 0 auto;
-    width: 100%;
     padding: 0;
+    width: 100%;
     &::after{
         clear: both;
         content: '';
