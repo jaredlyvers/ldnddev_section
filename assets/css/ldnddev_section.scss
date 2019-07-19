@@ -160,6 +160,11 @@ $key: (
         margin: 0 auto;
         width: 100%;
         z-index: 10;
+        &::after{
+            clear: both;
+            content: '';
+            display: table;
+        }
         &.-contained{
             padding: 0 $gutter-mobile;
             max-width: $max-width;
